@@ -4,5 +4,3 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - Guardfile
-collections:
-  - til
