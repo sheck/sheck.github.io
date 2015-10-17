@@ -25,7 +25,9 @@
     </ul>
 
   </main>
+  {% if site.environment == 'development' %}
   <script src="http://localhost:35729/livereload.js"></script>
+  {% endif %}
 </body>
 </html>
 
