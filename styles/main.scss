@@ -3,7 +3,7 @@
 
 // Variables
 
-$primary: #E74C3C;
+$initial-bg-color: #E74C3C;
 $text-color: #fff;
 
 $base-font-size: 1.125em;
@@ -157,7 +157,7 @@ input[type=submit] {
 // Custom Elements
 
 main {
-  background: $primary;
+  background: $initial-bg-color;
   color: $text-color;
   padding: 0 5% 2.5%;
   border: 1rem solid;
