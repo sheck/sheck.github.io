@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="{{ "/styles/main.css" | prepend: site.baseurl }}">
 </head>
 <body>
-  <main>
+  <main id="main">
 
     {{ content }}
 
@@ -31,6 +31,18 @@
 
     </script>
   {% endif %}
+  <script>
+    var colors = ['#2C3E50', '#7D9100', '#3498DB', '#F5A503', '#E74C3C'],
+        nextColor = 0,
+        container = document.getElementById('main')
+    function rotateBg() {
+      container.style.backgroundColor = colors[nextColor]
+      if (colors[nextColor + 1]) nextColor++
+      else nextColor = 0
+    }
+    setTimeout(rotateBg, 0)
+    setInterval(rotateBg, 5000)
+  </script>
 </body>
 </html>
 

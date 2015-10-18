@@ -141,7 +141,7 @@ input[type=submit] {
   font-weight: 900;
   font-size: .7em;
   letter-spacing: .1em;
-  background: $primary;
+  background: transparent;
   color: $text-color;
   padding: .5em 1em;
   border: 2px solid $text-color;
@@ -149,7 +149,7 @@ input[type=submit] {
   cursor: pointer;
   &:hover {
     background: $text-color;
-    color: $primary;
+    color: #000;
   }
 }
 
@@ -162,6 +162,7 @@ main {
   padding: 0 5% 2.5%;
   border: 1rem solid;
   min-height: 100vh;
+  transition: 5s background-color;
 }
 
 nav > ul {
@@ -188,7 +189,7 @@ nav > ul {
     border-radius: 2px;
     &:hover {
       background: $text-color;
-      color: $primary;
+      color: #000;
     }
   }
 }
