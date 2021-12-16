@@ -1,5 +1,5 @@
 {
-  "name": "@example/minimal",
+  "name": "sheck.github.io",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -8,7 +8,7 @@
     "build": "astro build",
     "preview": "astro preview"
   },
-  "devDependencies": {
+  "dependencies": {
     "astro": "^0.21.12"
   }
 }
