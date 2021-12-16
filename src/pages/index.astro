@@ -1,22 +1,62 @@
 ---
-// Component imports and setup JavaScript go here!
 ---
-
 <html lang="en">
 
 <head>
   <meta charset="utf-8" />
-  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
   <meta name="viewport" content="width=device-width" />
-  <title>Welcome to Astro</title>
+
+  <title>Nick Sheck</title>
+
+  <link rel="stylesheet" type="text/css" href={Astro.resolve('../styles/global.css')} />
+
   <style>
-    /* scoped CSS styles go here: */
-    /* h1 { ... } */
+    body {
+      padding: 5%;
+    }
+    .name {
+      letter-spacing: -0.5px;
+      line-height: 1;
+      padding-bottom: .125em;
+      border-bottom: 10px solid;
+    }
+    .tag1 {
+      font-size: 2.25rem;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+      line-height: 1;
+    }
+    .tag2 {
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 0.125em;
+      opacity: .7;
+    }
+    a {
+      text-decoration: none;
+      position: relative;
+      border-bottom: 2.5px solid rgba(127,127,127,.5);
+    }
   </style>
 </head>
 
 <body>
-  <h1>Welcome to <a href="https://astro.build/">Astro</a></h1>
+  <h1 class="name">Nick Sheck</h1>
+  <p class="tag2">Bellingham, Washington</p>
+  <p class="tag1">Software Engineer</p>
+  <ul>
+    <li><a href="//world.hey.com/sheck">My Blog</a></li>
+    <li><a href="//500px.com/p/nsheck">Photography</a></li>
+    <li><a href="/til">Learning Log</a></li>
+    <li><a href="//github.com/sheck">Github</a></li>
+    <li><a href="//twitter.com/nicksheck">Twitter</a></li>
+  </ul>
 </body>
 
 </html>
