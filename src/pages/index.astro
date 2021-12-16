@@ -20,11 +20,44 @@
     body {
       padding: 5%;
     }
-    .name {
-      letter-spacing: -0.5px;
-      line-height: 1;
+    header {
       padding-bottom: .125em;
       border-bottom: 10px solid;
+      margin-bottom: 1.38rem;
+    }
+    header > img {
+      max-width: 300px;
+      border-radius: 100%;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 5%;
+
+      transition: filter 1s ease-in-out;
+      filter: grayscale(100%) contrast(150%);
+    }
+    header > img:hover {
+      filter: none;
+    }
+    @media screen and (min-width: 70em) {
+      header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+      }
+      header > img {
+        order: 1;
+        margin: 0 0 1em;
+        max-width: 200px;
+      }
+    }
+    @media screen and (min-width: 100em) {
+      header > img {
+        max-width: 300px;
+      }
+    }
+    .name {
+      margin: 0;
+      letter-spacing: -0.5px;
     }
     .tag1 {
       font-size: 2.25rem;
@@ -47,7 +80,10 @@
 </head>
 
 <body>
-  <h1 class="name">Nick Sheck</h1>
+  <header>
+    <img src={Astro.resolve("../images/cool.jpg")} alt="a cool photo of me" />
+    <h1 class="name">Nick Sheck</h1>
+  </header>
   <p class="tag2">Bellingham, Washington</p>
   <p class="tag1">Software Engineer</p>
   <ul>
