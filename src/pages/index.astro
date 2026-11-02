@@ -1,4 +1,6 @@
 ---
+import '../styles/global.css';
+import cool from '../images/cool.jpg';
 ---
 <html lang="en">
 
@@ -13,8 +15,6 @@
   <meta name="viewport" content="width=device-width" />
 
   <title>Nick Sheck</title>
-
-  <link rel="stylesheet" type="text/css" href={Astro.resolve('../styles/global.css')} />
 
   <style>
     body {
@@ -81,7 +81,7 @@
 
 <body>
   <header>
-    <img src={Astro.resolve("../images/cool.jpg")} alt="a cool photo of me" />
+    <img src={cool.src} alt="a cool photo of me" />
     <h1 class="name">Nick Sheck</h1>
   </header>
   <p class="tag2">Bellingham, Washington</p>
